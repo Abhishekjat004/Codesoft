@@ -1,175 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Poppins', sans-serif;
+
 }
 
+.container {
+  max-width: 80vw;
+  font-family: 'Ubuntu', sans-serif;
+}
 
-footer {
-  width: 100vw;
+.navbar {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  padding: 0px 40px;
-  background: linear-gradient(90deg, #facf29, #ff3124);
-  height: 9vh;
+  height: 67px;
 }
 
-/* Style for the individual images */
-.image img {
-  width: 25px;
-  height: auto;
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.email img {
-  width: 25px;
-  height: 19px;
-  border-radius: 12px;
-}
-
-#btn {
-  border-radius: 23px;
-  background: linear-gradient(90deg, #facf29, #ff3124);
-  height: 34px;
-  border-color: 4px solid black;
-}
-
-#btn:hover {
-  transform: scale(1.1);
-}
-
-header {
-  height: 10vh;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 36px;
-}
-
-header ul li {
-  display: inline-flex;
-  justify-content: center;
-}
-
-header ul li a {
-  text-decoration: none;
-  padding: 13px 11px;
-  color: #393123;
-  font-size: 22px;
-  font-family: sans-serif;
-}
-
-header ul li a:hover {
+.navbar a:hover {
   color: blue;
-}
-
-.landing {
-  display: flex;
-  align-items: center;
-  font-size: 33px;
-}
-
-nav .search {
-  width: 33px;
-  height: auto;
-}
-
-nav .search:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  text-decoration: underline;
 }
 
-#carouselExampleAutoplaying img {
-  opacity: 0.6;
-  height: 54vh;
-
+.navbar li {
+  list-style: none;
+  margin: 0 12px;
 }
 
-.three {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(90deg, #facf29, #ff3124);
-  padding: 34px;
-  color: white;
-}
-
-.three h {
-  color: black;
-}
-
-.aboutus {
-  display: flex;
-  justify-content: space-around;
-  margin: 119px 18px;
-  padding: 0px 62px;
-}
-
-
-
-#para {
+.topleft {
   width: 50%;
 }
 
-#readmore {
-  width: 154px;
+.topright {
+  width: 50%;
+}
+
+.section1 {
+  max-height: 100vh;
+  color: #711e15;
+}
+
+.section1 h1 {
+  color: #37110d;
+  font-size: 2rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+.topright .gymimg {
+  width: 466px;
+}
+
+.section2 {
+  padding: 73px;
+}
+
+.section2 h1 {
+  font-size: 2.3rem;
+}
+
+.section2 p {
+  padding: 0 8vw;
+  text-align: center;
+}
+
+.box {
+  padding: 8px 0;
+  margin: 12px 22px;
+  min-width: 20vw;
+  border: 2px solid rgb(120, 54, 16);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.highlighted {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.box ul {
+  list-style-type: none;
+}
+
+.box ul li {
+  margin: 12px 2px;
+}
+
+.plantable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3 table {
+  width: 100%;
+  margin-bottom: 140px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.section3 table th {
+  width: 23vw;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+
+.section3 table td {
+  border-bottom: 2px solid black;
+}
+
+
+.section3 h1 {
+  font-size: 2.3rem;
+}
+
+.section3 {
+  padding: 73px;
+}
+
+footer {
+  padding: 23px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+.deal {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 12px 0;
+}
+
+.ourservices img {
+  width: 256px;
   height: auto;
-  border-radius: 45px;
 }
 
-#readmore:hover {
-  transform: scale(1.1);
-
-}
-
-.services {
-  margin: 0px 23px;
-}
-
-.services h1 {
-  margin: 45px 13px 9px 34px;
-}
-
-.services img {
-  width: 345px;
-  height: auto;
-  margin: 45px;
-  transition: transform 0.3s ease;
-}
-
-.services img:hover {
+.ourservices img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
 
-#SERVICE1 {
-  position: absolute;
-  top: auto;
-  left: 55px;
-  color: rgb(86, 89, 159);
+.socialimg a {
+  color: #711e15;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 54px;
+  height: auto;
 }
 
-#SERVICE2 {
-  position: absolute;
-  top: auto;
-  left: 496px;
-  color: rgb(84, 86, 131);
-}
-
-#SERVICE3 {
-  position: absolute;
-  top: auto;
-  left: 932px;
-  color: rgb(85, 88, 139);
+.socialimg a:hover {
+  color: red;
 }
